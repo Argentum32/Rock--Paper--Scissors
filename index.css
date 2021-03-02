@@ -351,4 +351,15 @@ header > img {
         font-size: 12px;
         letter-spacing: 1px;
     }
+
+    .modal{
+        max-width: none;
+        height: 100%;
+        align-items: center;
+    }
+    .modalHeader {
+        flex-direction: column;
+        position: absolute;
+        height: 80%;
+    }
 }

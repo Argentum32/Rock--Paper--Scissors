@@ -1,46 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rock, Paper, Scissors</title>
-  <link rel="stylesheet" href="index.css">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap" rel="stylesheet">
-</head>
-<body>
-  <header>
-    <img src='images/logo.svg'/>
-    <div class="scoreField">
-      <small>SCORE</small>
-      <h1 id='score'>12</h1>
-    </div>
-  </header>
-  <div class="main">
-    <div class="gameBG"></div>
-    <div class="game">
-      <div class="paper">
-        <img id='paper' src='./images/icon-paper.svg'>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock, Paper, Scissors</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <img src='images/logo.svg'/>
+      <div class="scoreField">
+        <small>SCORE</small>
+        <h1 id='score'>12</h1>
       </div>
-      <div class="scissors">
-        <img id='scissors' src='./images/icon-scissors.svg'>  
-      </div>
-      <div class="rock">
-        <img id='rock' src='./images/icon-rock.svg'>
+    </header>
+    <div class="main">
+      <div class="game">
+        <div class="paper">
+          <img id='paper' src='./images/icon-paper.svg'>
+        </div>
+        <div class="scissors">
+          <img id='scissors' src='./images/icon-scissors.svg'>  
+        </div>
+        <div class="rock">
+          <img id='rock' src='./images/icon-rock.svg'>
+        </div>
       </div>
     </div>
-  </div>
-  
-  <button class="footer">RULES</button>
-  <div class="modal">
-    <div class="modalHeader">
-      <h1>RULES</h1>
-      <img class='closeBtn' src='images/icon-close.svg'>
+    
+    <button class="footer">RULES</button>
+    <div class="modal">
+      <div class="modalHeader">
+        <h1>RULES</h1>
+        <img class='closeBtn' src='images/icon-close.svg'>
+      </div>
+      <img src='images/image-rules.svg'>
     </div>
-    <img src='images/image-rules.svg'>
-  </div>
-  <div id="overlay"></div>
+    <div id="overlay"></div>
 
-  <script src='index.js'></script>
-</body>
+    <script src='index.js'></script>
+  </body>
 </html>

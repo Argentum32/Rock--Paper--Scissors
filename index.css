@@ -41,24 +41,23 @@ header > img {
     color:hsl(229, 25%, 31%);
 }
 
-.game {
-    width: 46%;
-    padding-left: 27%;
-    min-height: 560px;
-    display: grid;
-    grid-template: 
-    "paper . scissors"
-    " .    .    . "
-    " .   rock  . ";
+.main {
+    padding-top: 40px;
+    display: flex;
+    justify-content: center;
 }
 
-.gameBG {
-    padding-left: 100%;
-    min-height: 460px;
-    margin: 60px auto;
+.game {
     background: url(./images/bg-triangle.svg) no-repeat center;
-    position: absolute;
-    background-size: contain;
+    background-size: 70%;
+    width: 740px;
+    min-height: 560px;
+    display: grid;
+    justify-content: space-around;
+    grid-template:
+        "paper . scissors"
+        " . . . "
+        " . rock . ";
 }
 
 #paper, #rock, #scissors{
@@ -94,7 +93,6 @@ header > img {
 }
 
 .chooses {
-    width: 45%;
     padding: 80px;
     margin: 30px auto;
     display: flex;
@@ -130,8 +128,7 @@ header > img {
 }
 
 .result {
-    width: 60%;
-    padding: 80px;
+    width: 740px;    
     margin: 30px auto;
     display: flex;
     flex-direction: column;
@@ -171,12 +168,15 @@ header > img {
 
 .paperWinner{
     box-shadow: rgb(41, 69, 194) 0px 10px 1px 1px, inset 0 10px rgb(186, 191, 213), rgba(43, 56, 88, .8) 0px 0px 1px 45px, rgba(43, 56, 88, .6) 0px 0px 1px 90px, rgba(43, 56, 88, .4) 0px 0px 1px 150px;
+    z-index: -1;
 }
 .rockWinner{
     box-shadow: rgb(158, 24, 49) 0px 10px 1px 1px, inset 0 10px rgb(186, 191, 213), rgba(43, 56, 88, .8) 0px 0px 1px 45px, rgba(43, 56, 88, .6) 0px 0px 1px 90px, rgba(43, 56, 88, .4) 0px 0px 1px 150px;
+    z-index: -1;
 }
 .scissorsWinner{
     box-shadow: rgb(199, 108, 29) 0px 10px 1px 1px, inset 0 10px rgb(186, 191, 213), rgba(43, 56, 88, .8) 0px 0px 1px 45px, rgba(43, 56, 88, .6) 0px 0px 1px 90px, rgba(43, 56, 88, .4) 0px 0px 1px 150px;
+    z-index: -1;
 }
 
 
@@ -265,19 +265,21 @@ header > img {
     pointer-events: all;
 }
 
-@media screen and (max-width:1300px) {
+@media screen and (max-width: 1024px) {
+
+    .result {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 768px) {
     
     header {
         width: 75%;
     }
     .game {
-        width: 70%;
-        padding-left: 15%;
+        width: 300px;
         min-height: 280px;
-    }
-
-    .gameBG {
-        min-height: 170px;
     }
     #paper, #rock, #scissors {
         width: 35px;
@@ -300,6 +302,16 @@ header > img {
         box-shadow: rgb(158 24 49) 0px 5px 1px 0px, inset 0 5px rgb(186 191 213);
     }
 
+    .paperWinner{
+        box-shadow: rgb(41, 69, 194) 0px 5px 1px 0px, inset 0 5px rgb(186 191 213), rgba(43, 56, 88, .8) 0px 0px 1px 24px, rgba(43, 56, 88, .6) 0px 0px 1px 50px, rgba(43, 56, 88, .4) 0px 0px 1px 80px;
+    }
+    .rockWinner{
+        box-shadow: rgb(158, 24, 49) 0px 5px 1px 0px, inset 0 5px rgb(186 191 213), rgba(43, 56, 88, .8) 0px 0px 1px 24px, rgba(43, 56, 88, .6) 0px 0px 1px 50px, rgba(43, 56, 88, .4) 0px 0px 1px 80px;
+    }
+    .scissorsWinner{
+        box-shadow: rgb(199, 108, 29) 0px 5px 1px 0px, inset 0 5px rgb(186 191 213), rgba(43, 56, 88, .8) 0px 0px 1px 24px, rgba(43, 56, 88, .6) 0px 0px 1px 50px, rgba(43, 56, 88, .4) 0px 0px 1px 80px;
+    }
+
     .footer {
         right: 50%;
         bottom: 60px;
@@ -307,7 +319,6 @@ header > img {
     }
 
     .chooses {
-        width: 90%;
         padding: 0;
         flex-flow: wrap-reverse;
     }
@@ -322,8 +333,7 @@ header > img {
         letter-spacing: 1px;
     }
     .result {
-        width: 90%;
-        padding: 0px;
+        width: 80%;
         flex-flow: column-reverse;
     }
     .owner {
@@ -338,6 +348,7 @@ header > img {
         text-align: center;
     }
     .returnContainer {
+        flex: 100%;
         margin-top: 50px;
     }
     .finish > div > h1 {

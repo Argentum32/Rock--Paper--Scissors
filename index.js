@@ -1,9 +1,3 @@
-// const paper = document.getElementById('paper')
-//       rock = document.getElementById('rock')
-//       scissors = document.getElementById('scissors')
-// paper.addEventListener('click', () => isWin('paper'))
-// rock.addEventListener('click', () => isWin('rock'))
-// scissors.addEventListener('click', () => isWin('scissors'))
 const main = document.querySelector('.main')
       scoreElement = document.getElementById('score')
       score = localStorage.getItem('score') || 12

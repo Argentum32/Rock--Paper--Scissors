@@ -1,6 +1,6 @@
 # Rock Paper Scissors game
 
-(You can try it on Vercel hosting)[https://rock-paper-scissors-argentum32.vercel.app/]
+[You can try it on Vercel hosting](https://rock-paper-scissors-argentum32.vercel.app/)
 
 ### Rules
 
